@@ -27,3 +27,5 @@ class XmlOutputer(object):
                 conn.rollback()
                 
         conn.close()
+    def output_html(self, items):
+        pass

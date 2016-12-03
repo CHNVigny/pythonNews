@@ -38,7 +38,7 @@ class XmlParser(object):
                 link = item.find('link').text
             except:
                 link = '-'
-#             print link
+            # print link
             try:
                 author = item.find('author').text
             except:
@@ -62,7 +62,7 @@ class XmlParser(object):
                 img_urls = ','.join(img_urls_raw)
             except:
                 img_urls = '-'
-            #print img_urls
+            # print img_urls
             dic = {"title" : title, "link" : link, "author" : author, "category" : category, "pubDate" : pubDate, "description" : description, "img_url" : img_urls}
             items.append(dic)    
         return items

@@ -11,6 +11,7 @@ class XmlDownloader(object):
         response = urllib2.urlopen(url)
         if response.getcode() != 200:
             return None
+        # print response.read()
         return response.read()
     
 

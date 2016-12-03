@@ -82,7 +82,7 @@ class SpiderMain(object):
         except:
             print 'craw failed'
 
-        self.outputer.oprate_db(items)
+        # self.outputer.oprate_db(items)
         self.outputer.output_xml(items)
 
     
@@ -90,7 +90,8 @@ class SpiderMain(object):
 if __name__ == "__main__":
     news_categoties = ["china","world","society"]
     for news_categotie in news_categoties:
-        root_url = "http://rss.sina.com.cn/news/%s/focus15.xml" % news_categotie
+        # root_url = "http://rss.sina.com.cn/news/%s/focus15.xml" % news_categotie
+        root_url = "http://www.nbweekly.com/rss/smw/"
         obj_spider = SpiderMain()
         obj_spider.craw(root_url)
     print "done"

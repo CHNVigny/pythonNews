@@ -27,12 +27,16 @@ class get_img_url(object):
 #         print html_cont
         soup = BeautifulSoup(html_cont, 'html.parser')
         try:
-            nodes = soup.find('div',class_="article article_16").find('div',class_="img_wrapper").find_all('img')
+            nodes = soup.find('div',class_="article article_16").find_all('div')
+            for node in nodes:
+                img_node = node.find('img')
+                url = img_node['src']
+                urls.append(url)
         except:
             return '-'
-        for node in nodes:
-            url = node['src']
-            urls.append(url)
+#         for node in nodes:
+#             url = node['src']
+#             urls.append(url)
         return urls
         
 
