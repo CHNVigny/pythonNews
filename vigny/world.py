@@ -85,10 +85,9 @@ class SpiderMain(object):
 
 if __name__ == "__main__":
     # news_categoties = ["china", "world", "society"]
-    for news_categotie in news_categoties:
-        root_url = "http://rss.sina.com.cn/news/world/focus15.xml"
-
+    urls = ["http://rss.huanqiu.com/world/roll.xml", "http://rss.sina.com.cn/news/world/focus15.xml"]
+    for root_url in urls:
         obj_spider = SpiderMain()
         obj_spider.craw(root_url)
-    print "done"
+
 

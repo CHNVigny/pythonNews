@@ -4,6 +4,7 @@
 
 import xml.etree.ElementTree as ET
 import img_url_get
+import feedparser
 
 
 
@@ -65,5 +66,56 @@ class XmlParser(object):
             # print img_urls
             dic = {"title" : title, "link" : link, "author" : author, "category" : category, "pubDate" : pubDate, "description" : description, "img_url" : img_urls}
             items.append(dic)    
+        return items
+
+    # use feedparser to parse RSS
+    def feed_parse(self, url):
+        items = []
+        d = feedparser.parse(url)
+        for e in d.entries:
+            try:
+
+                title = e.title
+                compare = cmp(title, "")
+                if compare == 0:
+                    title = '-'
+
+
+            except:
+                title = '-'
+
+                #             print title
+            try:
+                link = e.link
+            except:
+                link = '-'
+            # print link
+            try:
+                author = e.author
+            except:
+                author = '-'
+            try:
+                category = e.category
+            except:
+                category = '-'
+            try:
+                pubDate = e.published
+            except:
+                pubDate = '-'
+            try:
+                # description_raw = item.find('description').text
+                description = e.description
+            except:
+                description = '-'
+                #             print description
+            try:
+                img_urls_raw = self.img.get_url(link)
+                img_urls = ','.join(img_urls_raw)
+            except:
+                img_urls = '-'
+            # print img_urls
+            dic = {"title": title, "link": link, "author": author, "category": category, "pubDate": pubDate,
+                   "description": description, "img_url": img_urls}
+            items.append(dic)
         return items
             

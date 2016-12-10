@@ -71,9 +71,9 @@ class SpiderMain(object):
         try :
             
             #print 'craw %d : %s' % (count, new_url)
-            xml_cont = self.downloader.download(root_url)#xml_cont是下载好的xml内容
+            # xml_cont = self.downloader.download(root_url)#xml_cont是下载好的xml内容
 #             print xml_cont
-            items = self.parser.parse(xml_cont)
+            items = self.parser.feed_parse(root_url)
             #self.urls.add_new_urls(new_urls)
             #self.outputer.collect_data(new_data)
 
@@ -89,9 +89,10 @@ class SpiderMain(object):
         
 if __name__ == "__main__":
     # news_categoties = ["china","world","society"]
-    for news_categotie in news_categoties:
-        root_url = "http://rss.sina.com.cn/news/china/focus15.xml"
-
+    # for news_categotie in news_categoties:
+    # root_url = "http://rss.sina.com.cn/news/china/focus15.xml"
+    urls = ["http://rss.sina.com.cn/news/china/focus15.xml", "http://rss.huanqiu.com/china/roll.xml"]
+    for root_url in urls:
         obj_spider = SpiderMain()
         obj_spider.craw(root_url)
     print "done"
