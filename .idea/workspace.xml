@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ced9967-d072-4726-ae75-9af24ece8b30" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vigny/social.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vigny/world.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vigny/finance.py" afterPath="$PROJECT_DIR$/vigny/finance.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vigny/js.py" afterPath="$PROJECT_DIR$/vigny/js.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vigny/sports.py" afterPath="$PROJECT_DIR$/vigny/sports.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vigny/tech.py" afterPath="$PROJECT_DIR$/vigny/tech.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vigny/spider_main.py" afterPath="$PROJECT_DIR$/vigny/spider_main.py" />
     </list>
     <ignored path="pythonNews.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,7 +79,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="social.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="social.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vigny/social.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="506">
@@ -129,11 +123,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spider_main.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="spider_main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vigny/spider_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="94" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+            <state relative-caret-position="506">
+              <caret line="91" column="4" lean-forward="false" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -158,7 +152,6 @@
         <option value="$PROJECT_DIR$/test" />
         <option value="$PROJECT_DIR$/vigny/xml_parser.py" />
         <option value="$PROJECT_DIR$/vigny/xml_outputer.py" />
-        <option value="$PROJECT_DIR$/vigny/spider_main.py" />
         <option value="$PROJECT_DIR$/vigny/xml_downloader.py" />
         <option value="$PROJECT_DIR$/vigny/js.py" />
         <option value="$PROJECT_DIR$/vigny/finance.py" />
@@ -166,6 +159,7 @@
         <option value="$PROJECT_DIR$/vigny/tech.py" />
         <option value="$PROJECT_DIR$/vigny/world.py" />
         <option value="$PROJECT_DIR$/vigny/social.py" />
+        <option value="$PROJECT_DIR$/vigny/spider_main.py" />
       </list>
     </option>
   </component>
@@ -528,6 +522,14 @@
       <option name="presentableId" value="Default" />
       <updated>1478568789929</updated>
     </task>
+    <task id="LOCAL-00001" summary="新加入两个专题">
+      <created>1481367811335</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1481367811335</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -567,6 +569,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="新加入两个专题" />
+    <option name="LAST_COMMIT_MESSAGE" value="新加入两个专题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -760,18 +766,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vigny/spider_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="94" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vigny/social.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="87" column="4" lean-forward="false" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vigny/spider_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="91" column="4" lean-forward="false" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="4" />
           <folding />
         </state>
       </provider>
