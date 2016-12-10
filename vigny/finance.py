@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!E:\Py_trade\pythonNews
 # -*- coding: UTF-8 -*-
 
 
