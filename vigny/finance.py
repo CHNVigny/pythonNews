@@ -58,13 +58,14 @@ class SpiderMain(object):
             print 'craw failed'
 
         self.outputer.output_xml(items)
-
+        self.outputer.oprate_db(items, category)
     
         
 if __name__ == "__main__":
 #     news_categoties = ["china","world","society"]
 #     for news_categotie in news_categoties:
-    urls = ["http://rss.sina.com.cn/news/allnews/finance.xml", "http://rss.huanqiu.com/finance/roll.xml"]
+    category = "finance"
+    urls = ["http://rss.sina.com.cn/news/allnews/finance.xml", "http://rss.huanqiu.com/finance/roll.xml", "http://news.baidu.com/n?cmd=1&class=finannews&tn=rss", "http://news.baidu.com/n?cmd=4&class=finannews&tn=rss", "http://finance.qq.com/financenews/domestic/rss_domestic.xml"]
     for root_url in urls:
         obj_spider = SpiderMain()
         obj_spider.craw(root_url)

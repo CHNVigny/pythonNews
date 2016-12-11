@@ -1,25 +1,25 @@
 #!E:\Py_trade\pythonNews
 # -*- coding: UTF-8 -*-
 
-import xml_downloader
+
+
+
 
 
 import xml_parser
 import xml_outputer
+import xml_downloader
 
 
 class SpiderMain(object):
-
     def __init__(self):
-        #self.urls =xml_downloaderrlManager()
+        # self.urls = url_manager.UrlManager()
         self.downloader = xml_downloader.XmlDownloader()
         self.parser = xml_parser.XmlParser()
         self.outputer = xml_outputer.XmlOutputer()
 
-
-
     def craw(self, root_url):
-        #count = 1
+        # count = 1
         """
         self.urls.add_new_url(root_url)
         while self.urls.has_new_url():
@@ -37,31 +37,33 @@ class SpiderMain(object):
                 count = count + 1
             except:
                 print 'craw failed'
-                
+
         """
-        try :
-            
-            #print 'craw %d : %s' % (count, new_url)
+        try:
+
+            # print 'craw %d : %s' % (count, new_url)
             # xml_cont = self.downloader.download(root_url)#xml_cont�����غõ�xml����
-            # items = self.parser.parse(xml_cont)
-#             print xml_cont
+            #             print xml_cont
+            #             items = self.parser.parse(xml_cont)
             items = self.parser.feed_parse(root_url)
-            #self.urls.add_new_urls(new_urls)
-            #self.outputer.collect_data(new_data)
+            # self.urls.add_new_urls(new_urls)
+            # self.outputer.collect_data(new_data)
 
 
-            
+
         except:
             print 'craw failed'
 
         self.outputer.output_xml(items)
+        self.outputer.oprate_db(items, category)
 
     
         
     
         
 if __name__ == "__main__":
-    urls = ["http://rss.huanqiu.com/mil/china.xml", "http://rss.sina.com.cn/jczs/focus.xml"]
+    category = "js"
+    urls = ["http://rss.huanqiu.com/mil/china.xml", "http://rss.sina.com.cn/jczs/focus.xml", "http://news.baidu.com/n?cmd=1&class=mil&tn=rss", "http://news.baidu.com/n?cmd=4&class=mil&tn=rss", "http://news.qq.com/milite/rss_milit.xml"]
     for root_url in urls:
         obj_spider = SpiderMain()
         obj_spider.craw(root_url)

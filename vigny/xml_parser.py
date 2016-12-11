@@ -5,6 +5,7 @@
 import xml.etree.ElementTree as ET
 import img_url_get
 import feedparser
+import re
 
 
 
@@ -59,10 +60,14 @@ class XmlParser(object):
                 description = '-'
 #             print description
             try:
-                img_urls_raw = self.img.get_url(link)
+                img_urls_raw = self.img.get_url_from_desc(description)
                 img_urls = ','.join(img_urls_raw)
             except:
-                img_urls = '-'
+                try:
+                    img_urls_raw = self.img.get_url_from_web(link, author)
+                    img_urls = ','.join(img_urls_raw)
+                except:
+                    img_urls = '-'
             # print img_urls
             dic = {"title" : title, "link" : link, "author" : author, "category" : category, "pubDate" : pubDate, "description" : description, "img_url" : img_urls}
             items.append(dic)    
@@ -74,8 +79,8 @@ class XmlParser(object):
         d = feedparser.parse(url)
         for e in d.entries:
             try:
-
-                title = e.title
+                title_raw = e.title
+                title = title_raw.replace("\n", "").replace("\t", "")
                 compare = cmp(title, "")
                 if compare == 0:
                     title = '-'
@@ -104,13 +109,23 @@ class XmlParser(object):
                 pubDate = '-'
             try:
                 # description_raw = item.find('description').text
-                description = e.description
+                description_raw = e.description
+                description_raw_re = description_raw.replace("\n", "").replace("\t", "")
+                dr = re.compile(r'<[^>]+>', re.S)
+                description = dr.sub('', description_raw_re)
             except:
                 description = '-'
                 #             print description
             try:
-                img_urls_raw = self.img.get_url(link)
-                img_urls = ','.join(img_urls_raw)
+                img_urls_raw = self.img.get_url_from_desc(description_raw_re)
+                if img_urls_raw:
+                    img_urls = ','.join(img_urls_raw)
+                else:
+                    try:
+                        img_urls_raw = self.img.get_url_from_web(link, author)
+                        img_urls = ','.join(img_urls_raw)
+                    except:
+                        img_urls = '-'
             except:
                 img_urls = '-'
             # print img_urls

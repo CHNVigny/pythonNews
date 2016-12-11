@@ -1,9 +1,60 @@
-#!/usr/bin/env python2
+#!E:\Py_trade\pythonNews
 # -*- coding: UTF-8 -*-
 
-import requests
-if __name__ == '__main__':
-    link="http://go.rss.sina.com.cn/redirect.php?url=http://tech.sina.com.cn/d/v/2016-11-17/doc-ifxxwrwh4515927.shtml"
-    res=requests.get(link)
-    res.encoding='utf-8'
-    print(res.text)
+import xml_downloader
+
+import xml_parser
+import xml_outputer
+
+
+class SpiderMain(object):
+    def __init__(self):
+        # self.urls =xml_downloaderrlManager()
+        self.downloader = xml_downloader.XmlDownloader()
+        self.parser = xml_parser.XmlParser()
+        self.outputer = xml_outputer.XmlOutputer()
+
+    def craw(self, root_url):
+        # count = 1
+        """
+        self.urls.add_new_url(root_url)
+        while self.urls.has_new_url():
+            try :
+                new_url = self.urls.get_new_url()
+                print 'craw %d : %s' % (count, new_url)
+                html_cont = self.downloader.download(new_url)
+                new_urls, new_data = self.parser.parse(new_url, html_cont)
+                self.urls.add_new_urls(new_urls)
+                self.outputer.collect_data(new_data)
+
+
+                if count == 100:
+                    break
+                count = count + 1
+            except:
+                print 'craw failed'
+
+        """
+        try:
+
+            # print 'craw %d : %s' % (count, new_url)
+            # xml_cont = self.downloader.download(root_url)#xml_cont�����غõ�xml����
+            # items = self.parser.parse(xml_cont)
+            #             print xml_cont
+            items = self.parser.feed_parse(root_url)
+            # self.urls.add_new_urls(new_urls)
+            # self.outputer.collect_data(new_data)
+
+
+
+        except:
+            print 'craw failed'
+        self.outputer.oprate_db(items, "test")
+        self.outputer.output_xml(items)
+
+
+if __name__ == "__main__":
+    urls = ["http://news.qq.com/milite/rss_milit.xml"]
+    for root_url in urls:
+        obj_spider = SpiderMain()
+        obj_spider.craw(root_url)

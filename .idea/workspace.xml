@@ -2,15 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ced9967-d072-4726-ae75-9af24ece8b30" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vigny/build/bdist.win32/winexe/temp/_ctypes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vigny/build/bdist.win32/winexe/temp/_hashlib.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vigny/build/bdist.win32/winexe/temp/_mysql.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vigny/build/bdist.win32/winexe/temp/_socket.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vigny/build/bdist.win32/winexe/temp/_ssl.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vigny/build/bdist.win32/winexe/temp/bz2.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vigny/build/bdist.win32/winexe/temp/pyexpat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vigny/build/bdist.win32/winexe/temp/select.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vigny/build/bdist.win32/winexe/temp/unicodedata.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vigny/dist/CRYPT32.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vigny/dist/_ctypes.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vigny/dist/_hashlib.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vigny/dist/_mysql.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vigny/dist/_socket.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vigny/dist/_ssl.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vigny/dist/bz2.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vigny/dist/library.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vigny/dist/pyexpat.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vigny/dist/python27.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vigny/dist/select.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vigny/dist/spider_main.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vigny/dist/unicodedata.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vigny/dist/w9xpopen.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vigny/exe.zip" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vigny/finance.py" afterPath="$PROJECT_DIR$/vigny/finance.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vigny/img_url_get.py" afterPath="$PROJECT_DIR$/vigny/img_url_get.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vigny/js.py" afterPath="$PROJECT_DIR$/vigny/js.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vigny/setup.py" afterPath="$PROJECT_DIR$/vigny/setup.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vigny/social.py" afterPath="$PROJECT_DIR$/vigny/social.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vigny/spider_main.py" afterPath="$PROJECT_DIR$/vigny/spider_main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vigny/sports.py" afterPath="$PROJECT_DIR$/vigny/sports.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vigny/tech.py" afterPath="$PROJECT_DIR$/vigny/tech.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vigny/test.py" afterPath="$PROJECT_DIR$/vigny/test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vigny/world.py" afterPath="$PROJECT_DIR$/vigny/world.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vigny/xml_outputer.py" afterPath="$PROJECT_DIR$/vigny/xml_outputer.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vigny/xml_parser.py" afterPath="$PROJECT_DIR$/vigny/xml_parser.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vigny/spider_main.py" afterPath="$PROJECT_DIR$/vigny/china.py" />
     </list>
     <ignored path="pythonNews.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,9 +52,16 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/pythonNews$test.coverage" NAME="test Coverage Results" MODIFIED="1479283497410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonNews$main.coverage" NAME="main Coverage Results" MODIFIED="1481384631173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vigny" />
+    <SUITE FILE_PATH="coverage/pythonNews$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1481439774562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vigny" />
+    <SUITE FILE_PATH="coverage/pythonNews$china.coverage" NAME="china Coverage Results" MODIFIED="1481431698652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vigny" />
+    <SUITE FILE_PATH="coverage/pythonNews$world.coverage" NAME="world Coverage Results" MODIFIED="1481440195530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vigny" />
     <SUITE FILE_PATH="coverage/pythonNews$spider_main.coverage" NAME="spider_main Coverage Results" MODIFIED="1479280363956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pythonNews$finance.coverage" NAME="finance Coverage Results" MODIFIED="1481370311732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vigny" />
-    <SUITE FILE_PATH="coverage/pythonNews$js.coverage" NAME="js Coverage Results" MODIFIED="1481370627746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vigny" />
+    <SUITE FILE_PATH="coverage/pythonNews$sports.coverage" NAME="sports Coverage Results" MODIFIED="1481440076087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vigny" />
+    <SUITE FILE_PATH="coverage/pythonNews$finance.coverage" NAME="finance Coverage Results" MODIFIED="1481438613393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vigny" />
+    <SUITE FILE_PATH="coverage/pythonNews$js.coverage" NAME="js Coverage Results" MODIFIED="1481439105569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vigny" />
+    <SUITE FILE_PATH="coverage/pythonNews$tech.coverage" NAME="tech Coverage Results" MODIFIED="1481440167240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vigny" />
+    <SUITE FILE_PATH="coverage/pythonNews$social.coverage" NAME="social Coverage Results" MODIFIED="1481439951825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vigny" />
     <SUITE FILE_PATH="coverage/pythonNews$spider_main__1_.coverage" NAME="spider_main (1) Coverage Results" MODIFIED="1481368892191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vigny" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -38,21 +73,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="js.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vigny/js.py">
+      <file leaf-file-name="xml_parser.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vigny/xml_parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="66" column="33" lean-forward="true" selection-start-line="64" selection-start-column="4" selection-end-line="66" selection-end-column="33" />
-              <folding />
+            <state relative-caret-position="300">
+              <caret line="114" column="60" lean-forward="true" selection-start-line="114" selection-start-column="60" selection-end-line="114" selection-end-column="60" />
+              <folding>
+                <element signature="e#49#83#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="finance.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vigny/finance.py">
+      <file leaf-file-name="js.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vigny/js.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="69" column="33" lean-forward="true" selection-start-line="67" selection-start-column="4" selection-end-line="69" selection-end-column="33" />
+            <state relative-caret-position="250">
+              <caret line="64" column="18" lean-forward="false" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -61,9 +98,23 @@
       <file leaf-file-name="sports.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vigny/sports.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="62" column="195" lean-forward="false" selection-start-line="62" selection-start-column="195" selection-end-line="62" selection-end-column="195" />
+            <state relative-caret-position="200">
+              <caret line="62" column="23" lean-forward="true" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="xml_outputer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vigny/xml_outputer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="30" column="42" lean-forward="true" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+              <folding>
+                <marker date="1481431670187" expanded="true" signature="594:698" ph="INSERT INTO news... " />
+                <marker date="1481431670187" expanded="true" signature="1081:1169" ph="SELECT * FRO... missing_value" />
+                <marker date="1481431670187" expanded="true" signature="1114:1168" ph="SELECT Url F... china" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,18 +122,8 @@
       <file leaf-file-name="tech.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vigny/tech.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="61" column="139" lean-forward="true" selection-start-line="61" selection-start-column="139" selection-end-line="61" selection-end-column="139" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vigny/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="282">
+              <caret line="61" column="21" lean-forward="true" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -91,8 +132,8 @@
       <file leaf-file-name="world.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vigny/world.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+            <state relative-caret-position="1475">
+              <caret line="61" column="21" lean-forward="false" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -101,42 +142,40 @@
       <file leaf-file-name="social.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vigny/social.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="89" column="33" lean-forward="true" selection-start-line="86" selection-start-column="4" selection-end-line="89" selection-end-column="33" />
+            <state relative-caret-position="75">
+              <caret line="57" column="48" lean-forward="false" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="xml_parser.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vigny/xml_parser.py">
+      <file leaf-file-name="xml_downloader.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vigny/xml_downloader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1106">
-              <caret line="101" column="37" lean-forward="false" selection-start-line="101" selection-start-column="37" selection-end-line="101" selection-end-column="37" />
+            <state relative-caret-position="200">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vigny/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="49" column="15" lean-forward="true" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
               <folding>
-                <element signature="e#49#83#0" expanded="true" />
+                <element signature="e#50#71#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="xml_outputer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vigny/xml_outputer.py">
+      <file leaf-file-name="finance.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vigny/finance.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="12" column="159" lean-forward="false" selection-start-line="12" selection-start-column="142" selection-end-line="12" selection-end-column="159" />
-              <folding>
-                <marker date="1480491781530" expanded="true" signature="584:690" ph="INSERT INTO news... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spider_main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vigny/spider_main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="93" column="100" lean-forward="false" selection-start-line="93" selection-start-column="100" selection-end-line="93" selection-end-column="100" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -159,16 +198,22 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/test" />
-        <option value="$PROJECT_DIR$/vigny/xml_outputer.py" />
         <option value="$PROJECT_DIR$/vigny/xml_downloader.py" />
-        <option value="$PROJECT_DIR$/vigny/finance.py" />
-        <option value="$PROJECT_DIR$/vigny/js.py" />
-        <option value="$PROJECT_DIR$/vigny/xml_parser.py" />
-        <option value="$PROJECT_DIR$/vigny/social.py" />
-        <option value="$PROJECT_DIR$/vigny/tech.py" />
-        <option value="$PROJECT_DIR$/vigny/sports.py" />
         <option value="$PROJECT_DIR$/vigny/spider_main.py" />
+        <option value="$PROJECT_DIR$/vigny/switch.py" />
+        <option value="$PROJECT_DIR$/vigny/main.py" />
+        <option value="$PROJECT_DIR$/vigny/china.py" />
+        <option value="$PROJECT_DIR$/vigny/xml_outputer.py" />
+        <option value="$PROJECT_DIR$/vigny/setup.py" />
+        <option value="$PROJECT_DIR$/vigny/finance.py" />
+        <option value="$PROJECT_DIR$/vigny/img_url_get.py" />
+        <option value="$PROJECT_DIR$/vigny/js.py" />
+        <option value="$PROJECT_DIR$/vigny/social.py" />
+        <option value="$PROJECT_DIR$/vigny/sports.py" />
+        <option value="$PROJECT_DIR$/vigny/tech.py" />
         <option value="$PROJECT_DIR$/vigny/world.py" />
+        <option value="$PROJECT_DIR$/vigny/xml_parser.py" />
+        <option value="$PROJECT_DIR$/vigny/test.py" />
       </list>
     </option>
   </component>
@@ -237,44 +282,8 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
-  <component name="RunManager" selected="Python.js">
-    <configuration default="false" name="spider_main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pythonNews" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider_main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pythonNews" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="spider_main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.world">
+    <configuration default="false" name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -287,12 +296,12 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pythonNews" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vigny/spider_main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vigny/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="js" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="social" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -305,12 +314,12 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pythonNews" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vigny/js.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vigny/social.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="finance" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="sports" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -323,7 +332,43 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pythonNews" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vigny/finance.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vigny/sports.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="tech" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/vigny" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pythonNews" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vigny/tech.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="world" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/vigny" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pythonNews" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vigny/world.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -543,19 +588,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.spider_main" />
-      <item index="1" class="java.lang.String" itemvalue="Python.test" />
-      <item index="2" class="java.lang.String" itemvalue="Python.spider_main (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Python.js" />
-      <item index="4" class="java.lang.String" itemvalue="Python.finance" />
+      <item index="0" class="java.lang.String" itemvalue="Python.test (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.social" />
+      <item index="2" class="java.lang.String" itemvalue="Python.sports" />
+      <item index="3" class="java.lang.String" itemvalue="Python.tech" />
+      <item index="4" class="java.lang.String" itemvalue="Python.world" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.js" />
-        <item index="1" class="java.lang.String" itemvalue="Python.finance" />
-        <item index="2" class="java.lang.String" itemvalue="Python.spider_main (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test" />
-        <item index="4" class="java.lang.String" itemvalue="Python.spider_main" />
+        <item index="0" class="java.lang.String" itemvalue="Python.world" />
+        <item index="1" class="java.lang.String" itemvalue="Python.tech" />
+        <item index="2" class="java.lang.String" itemvalue="Python.sports" />
+        <item index="3" class="java.lang.String" itemvalue="Python.social" />
+        <item index="4" class="java.lang.String" itemvalue="Python.test (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -584,7 +629,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481368060293</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="优化了解析算法，提高相应速度，增加新闻源。">
+      <created>1481371454693</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1481371454693</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -600,14 +652,14 @@
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14538626" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16309012" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32792583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3244496" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -637,7 +689,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="新加入两个专题" />
     <MESSAGE value="修改spider_main中的bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改spider_main中的bug" />
+    <MESSAGE value="优化了解析算法，提高相应速度，增加新闻源。" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化了解析算法，提高相应速度，增加新闻源。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -653,12 +706,22 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/vigny/xml_downloader.py</url>
-          <line>8</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/vigny/img_url_get.py</url>
+          <line>93</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/vigny/img_url_get.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/vigny/xml_parser.py</url>
+          <line>77</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="12" />
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -694,7 +757,9 @@
         <state relative-caret-position="300">
           <caret line="12" column="159" lean-forward="false" selection-start-line="12" selection-start-column="142" selection-end-line="12" selection-end-column="159" />
           <folding>
-            <marker date="1480491781530" expanded="true" signature="584:690" ph="INSERT INTO news... " />
+            <marker date="1481431670187" expanded="true" signature="594:698" ph="INSERT INTO news... " />
+            <marker date="1481431670187" expanded="true" signature="1081:1169" ph="SELECT * FRO... missing_value" />
+            <marker date="1481431670187" expanded="true" signature="1114:1168" ph="SELECT Url F... china" />
           </folding>
         </state>
       </provider>
@@ -707,7 +772,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vigny/spider_main.py">
+    <entry file="file://$PROJECT_DIR$/vigny/china.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -748,22 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vigny/xml_downloader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vigny/img_url_get.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -772,86 +821,134 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vigny/xml_outputer.py">
+    <entry file="file://$PROJECT_DIR$/vigny/switch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="12" column="159" lean-forward="false" selection-start-line="12" selection-start-column="142" selection-end-line="12" selection-end-column="159" />
+        <state relative-caret-position="300">
+          <caret line="21" column="24" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="21" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vigny/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vigny/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="81" lean-forward="false" selection-start-line="2" selection-start-column="81" selection-end-line="2" selection-end-column="81" />
           <folding>
-            <marker date="1480491781530" expanded="true" signature="584:690" ph="INSERT INTO news... " />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vigny/xml_parser.py">
+    <entry file="file://$PROJECT_DIR$/vigny/china.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1106">
-          <caret line="101" column="37" lean-forward="false" selection-start-line="101" selection-start-column="37" selection-end-line="101" selection-end-column="37" />
+        <state relative-caret-position="250">
+          <caret line="84" column="8" lean-forward="true" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vigny/img_url_get.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding>
-            <element signature="e#49#83#0" expanded="true" />
+            <element signature="e#48#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vigny/js.py">
+    <entry file="file://$PROJECT_DIR$/vigny/xml_downloader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="66" column="33" lean-forward="true" selection-start-line="64" selection-start-column="4" selection-end-line="66" selection-end-column="33" />
+        <state relative-caret-position="200">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vigny/finance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="69" column="33" lean-forward="true" selection-start-line="67" selection-start-column="4" selection-end-line="69" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vigny/social.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="89" column="33" lean-forward="true" selection-start-line="86" selection-start-column="4" selection-end-line="89" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vigny/test.py">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vigny/tech.py">
+    <entry file="file://$PROJECT_DIR$/vigny/js.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="61" column="139" lean-forward="true" selection-start-line="61" selection-start-column="139" selection-end-line="61" selection-end-column="139" />
+        <state relative-caret-position="250">
+          <caret line="64" column="18" lean-forward="false" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vigny/sports.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="62" column="195" lean-forward="false" selection-start-line="62" selection-start-column="195" selection-end-line="62" selection-end-column="195" />
+        <state relative-caret-position="200">
+          <caret line="62" column="23" lean-forward="true" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vigny/spider_main.py">
+    <entry file="file://$PROJECT_DIR$/vigny/social.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="93" column="100" lean-forward="false" selection-start-line="93" selection-start-column="100" selection-end-line="93" selection-end-column="100" />
+        <state relative-caret-position="75">
+          <caret line="57" column="48" lean-forward="false" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vigny/tech.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="61" column="21" lean-forward="true" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vigny/xml_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="114" column="60" lean-forward="true" selection-start-line="114" selection-start-column="60" selection-end-line="114" selection-end-column="60" />
+          <folding>
+            <element signature="e#49#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vigny/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="49" column="15" lean-forward="true" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
+          <folding>
+            <element signature="e#50#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vigny/xml_outputer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="30" column="42" lean-forward="true" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+          <folding>
+            <marker date="1481431670187" expanded="true" signature="594:698" ph="INSERT INTO news... " />
+            <marker date="1481431670187" expanded="true" signature="1081:1169" ph="SELECT * FRO... missing_value" />
+            <marker date="1481431670187" expanded="true" signature="1114:1168" ph="SELECT Url F... china" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vigny/world.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+        <state relative-caret-position="1475">
+          <caret line="61" column="21" lean-forward="false" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
           <folding />
         </state>
       </provider>
