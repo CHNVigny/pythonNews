@@ -83,7 +83,7 @@ class SpiderMain(object):
             print 'craw failed'
 
         self.outputer.oprate_db(items, category)
-        self.outputer.output_xml(items)
+        # self.outputer.output_xml(items)
 
     
         

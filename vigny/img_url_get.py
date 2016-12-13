@@ -34,7 +34,7 @@ class get_img_url(object):
 #         self.html_downloader=html_downloader.HtmlDownloader()
     
     def htmldownload(self, link, encoding):
-        res=requests.get(link)
+        res = requests.get(link)
         res.encoding = encoding
         return res.text
 
@@ -55,6 +55,7 @@ class get_img_url(object):
                     soup = BeautifulSoup(html_cont, 'html.parser')
                     nodes = soup.find('div', class_="qq_article").find_all('p')
                     for node in nodes:
+
                         img_node = node.find('img')
                         if img_node is None:
                             continue
@@ -81,7 +82,9 @@ class get_img_url(object):
                     #         for node in nodes:
                     #             url = node['src']
                     #             urls.append(url)
-                return urls
+                urls_set = set(urls)
+                urls_final = [url for url in urls_set]
+                return urls_final
                 break
             if case("WWW.SINA.COM.CN"):
                 try:
@@ -91,8 +94,10 @@ class get_img_url(object):
                     nodes = soup.find('div', class_="article article_16").find_all('div')
                     for node in nodes:
                         img_node = node.find('img')
+                        if img_node is None:
+                            continue
                         url = img_node['src']
-                        if url.find("data:image/png;base64"):
+                        if url.find("data:image/png;base64") != -1:
                             continue
                         urls.append(url)
                 except:
@@ -101,7 +106,9 @@ class get_img_url(object):
                     #         for node in nodes:
                     #             url = node['src']
                     #             urls.append(url)
-                return urls
+                urls_set = set(urls)
+                urls_final = [url for url in urls_set]
+                return urls_final
                 break
             if case():  # default
                 return '-'

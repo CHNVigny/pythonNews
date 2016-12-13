@@ -57,7 +57,7 @@ class SpiderMain(object):
         except:
             print 'craw failed'
 
-        self.outputer.output_xml(items)
+        # self.outputer.output_xml(items)
         self.outputer.oprate_db(items, category)
     
         
@@ -69,3 +69,4 @@ if __name__ == "__main__":
     for root_url in urls:
         obj_spider = SpiderMain()
         obj_spider.craw(root_url)
+    print "done"
