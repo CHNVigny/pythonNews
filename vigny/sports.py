@@ -61,7 +61,7 @@ class SpiderMain(object):
         
 if __name__ == "__main__":
     category = "sports"
-    urls = ["http://rss.sina.com.cn/news/allnews/sports.xml", "http://rss.huanqiu.com/sports/others.xml", "http://rss.huanqiu.com/sports/basketball.xml", "http://rss.huanqiu.com/sports/soccer.xml", "http://news.baidu.com/n?cmd=1&class=sportnews&tn=rss", "http://news.baidu.com/n?cmd=4&class=sportnews&tn=rss"]
+    urls = ["http://rss.huanqiu.com/sports/others.xml", "http://rss.huanqiu.com/sports/basketball.xml", "http://rss.huanqiu.com/sports/soccer.xml", "http://news.baidu.com/n?cmd=1&class=sportnews&tn=rss", "http://news.baidu.com/n?cmd=4&class=sportnews&tn=rss"]
     for root_url in urls:
         obj_spider = SpiderMain()
         obj_spider.craw(root_url)

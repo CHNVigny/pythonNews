@@ -54,6 +54,8 @@ class get_img_url(object):
                     # print html_cont
                     soup = BeautifulSoup(html_cont, 'html.parser')
                     nodes = soup.find('div', class_="qq_article").find_all('p')
+                    if nodes is None:
+                        return "-"
                     for node in nodes:
 
                         img_node = node.find('img')
@@ -86,12 +88,118 @@ class get_img_url(object):
                 urls_final = [url for url in urls_set]
                 return urls_final
                 break
+            if case("www.sina.com.cn"):
+                try:
+                    html_cont = self.htmldownload(link, "utf-8")
+                    # print html_cont
+                    soup = BeautifulSoup(html_cont, 'html.parser')
+                    nodes = soup.find('body').find_all('div', class_="img_wrapper")
+                    if len(nodes) == 0:
+                        return "-"
+                    for node in nodes:
+                        img_node = node.find('img')
+                        if img_node is None:
+                            continue
+                        url = img_node['src']
+                        if url.find("data:image/png;base64") != -1:
+                            continue
+                        urls.append(url)
+                except:
+                    return '-'
+                    break
+                    #         for node in nodes:
+                    #             url = node['src']
+                    #             urls.append(url)
+                urls_set = set(urls)
+                urls_final = [url for url in urls_set]
+                return urls_final
+                break
             if case("WWW.SINA.COM.CN"):
                 try:
                     html_cont = self.htmldownload(link, "utf-8")
                     # print html_cont
                     soup = BeautifulSoup(html_cont, 'html.parser')
-                    nodes = soup.find('div', class_="article article_16").find_all('div')
+                    nodes = soup.find('body').find_all('div', class_="img_wrapper")
+                    if len(nodes) == 0:
+                        return "-"
+                    for node in nodes:
+                        img_node = node.find('img')
+                        if img_node is None:
+                            continue
+                        url = img_node['src']
+                        if url.find("data:image/png;base64") != -1:
+                            continue
+                        urls.append(url)
+                except:
+                    return '-'
+                    break
+                    #         for node in nodes:
+                    #             url = node['src']
+                    #             urls.append(url)
+                urls_set = set(urls)
+                urls_final = [url for url in urls_set]
+                return urls_final
+                break
+            if case("SINA.com"):
+                try:
+                    html_cont = self.htmldownload(link, "utf-8")
+                    # print html_cont
+                    soup = BeautifulSoup(html_cont, 'html.parser')
+                    nodes = soup.find('body').find_all('div', class_="img_wrapper")
+                    if len(nodes) == 0:
+                        return "-"
+                    for node in nodes:
+                        img_node = node.find('img')
+                        if img_node is None:
+                            continue
+                        url = img_node['src']
+                        if url.find("data:image/png;base64") != -1:
+                            continue
+                        urls.append(url)
+                except:
+                    return '-'
+                    break
+                    #         for node in nodes:
+                    #             url = node['src']
+                    #             urls.append(url)
+                urls_set = set(urls)
+                urls_final = [url for url in urls_set]
+                return urls_final
+                break
+            if case("http://tech.huanqiu.com/news/"):
+                try:
+                    html_cont = self.htmldownload(link, "utf-8")
+                    # print html_cont
+                    soup = BeautifulSoup(html_cont, 'html.parser')
+                    nodes = soup.find('body').find('div', class_="text").find_all('p')
+                    if len(nodes) == 0:
+                        return "-"
+                    for node in nodes:
+                        img_node = node.find('img')
+                        if img_node is None:
+                            continue
+                        url = img_node['src']
+                        if url.find("data:image/png;base64") != -1:
+                            continue
+                        urls.append(url)
+                except:
+                    return '-'
+                    break
+                    #         for node in nodes:
+                    #             url = node['src']
+                    #             urls.append(url)
+                urls_set = set(urls)
+                urls_final = [url for url in urls_set]
+                return urls_final
+                break
+            if case("http://finance.huanqiu.com/roll/"):
+                try:
+                    html_cont = self.htmldownload(link, "utf-8")
+                    # print html_cont
+                    soup = BeautifulSoup(html_cont, 'html.parser')
+                    nodes = soup.find('body').find_all('div', class_="text")
+                    if len(nodes) == 0:
+                        return "-"
                     for node in nodes:
                         img_node = node.find('img')
                         if img_node is None:

@@ -54,7 +54,7 @@ class SpiderMain(object):
 
 
 if __name__ == "__main__":
-    urls = ["http://news.qq.com/milite/rss_milit.xml"]
+    urls = ["http://rss.huanqiu.com/finance/roll.xml"]
     for root_url in urls:
         obj_spider = SpiderMain()
         obj_spider.craw(root_url)
