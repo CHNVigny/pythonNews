@@ -40,6 +40,7 @@ class get_img_url(object):
 
     def get_url_from_web(self, link, author):
         urls = []
+        sina_img_url_abandon = "http://n.sinaimg.cn/news/content2014/news_con_qrcode.jpg"
         if link is None:
             return
 #         print link
@@ -101,9 +102,12 @@ class get_img_url(object):
                         if img_node is None:
                             continue
                         url = img_node['src']
-                        if url.find("data:image/png;base64") != -1:
+                        if cmp(url, sina_img_url_abandon):
+                            if url.find("data:image/png;base64") != -1:
+                                continue
+                            urls.append(url)
+                        else:
                             continue
-                        urls.append(url)
                 except:
                     return '-'
                     break
@@ -127,9 +131,12 @@ class get_img_url(object):
                         if img_node is None:
                             continue
                         url = img_node['src']
-                        if url.find("data:image/png;base64") != -1:
+                        if cmp(url, sina_img_url_abandon):
+                            if url.find("data:image/png;base64") != -1:
+                                continue
+                            urls.append(url)
+                        else:
                             continue
-                        urls.append(url)
                 except:
                     return '-'
                     break
@@ -153,9 +160,12 @@ class get_img_url(object):
                         if img_node is None:
                             continue
                         url = img_node['src']
-                        if url.find("data:image/png;base64") != -1:
+                        if cmp(url, sina_img_url_abandon):
+                            if url.find("data:image/png;base64") != -1:
+                                continue
+                            urls.append(url)
+                        else:
                             continue
-                        urls.append(url)
                 except:
                     return '-'
                     break

@@ -1,5 +1,21 @@
-d={}
-a="title"
-b="tttt"
-d[a]=b
-print d
+# -*- coding: UTF-8 -*-
+import MySQLdb
+
+category = "world"
+urls = ["http://rss.huanqiu.com/world/roll.xml", "http://rss.sina.com.cn/news/world/focus15.xml", "http://news.baidu.com/n?cmd=1&class=internews&tn=rss", "http://news.baidu.com/n?cmd=4&class=internews&tn=rss", "http://news.qq.com/newsgj/rss_newswj.xml"]
+
+urls_1 = ','.join(urls)
+
+conn = MySQLdb.connect(host="localhost", user="root", passwd="123456", db="newssource", charset="utf8")
+cursor = conn.cursor()
+sql = "INSERT INTO source(source,category) VALUES ('%s','%s')" %(urls_1, category)
+try:
+    # 执行sql语句
+    cursor.execute(sql)
+    # 提交到数据库执行
+    conn.commit()
+
+except:
+    # Rollback in case there is any error
+    conn.rollback()
+conn.close()

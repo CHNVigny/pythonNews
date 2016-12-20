@@ -26,7 +26,7 @@ class XmlOutputer(object):
             except:
                 # Rollback in case there is any error
                 conn.rollback()
-        sql_del_repeat = "DELETE FROM %s WHERE ID NOT IN (SELECT ID FROM (SELECT MAX(ID) AS ID FROM %s GROUP BY Url) AS b);" %(category, category)
+        sql_del_repeat = "DELETE FROM %s WHERE ID NOT IN (SELECT ID FROM (SELECT MIN(ID) AS ID FROM %s GROUP BY Url) AS b);" %(category, category)
         try:
             cursor.execute(sql_del_repeat)
             conn.commit()

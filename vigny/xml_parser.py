@@ -75,6 +75,9 @@ class XmlParser(object):
 
     # use feedparser to parse RSS
     def feed_parse(self, url):
+        sina = ["www.sina.com.cn", "WWW.SINA.COM.CN", "SINA.com"]
+
+
         items = []
         d = feedparser.parse(url)
         for e in d.entries:
@@ -97,8 +100,17 @@ class XmlParser(object):
             # print link
             try:
                 author = e.author
+                if author in sina:
+                    author_save = u"新浪网"
+                elif "huanqiu" in author:
+                    author_save = u"环球网"
+                elif "www.qq.com" in author:
+                    author_save = u"腾讯网"
+                else:
+                    author_save = author
             except:
                 author = '-'
+                author_save = '-'
             try:
                 category = e.category
             except:
@@ -129,7 +141,7 @@ class XmlParser(object):
             except:
                 img_urls = '-'
             # print img_urls
-            dic = {"title": title, "link": link, "author": author, "category": category, "pubDate": pubDate,
+            dic = {"title": title, "link": link, "author": author_save, "category": category, "pubDate": pubDate,
                    "description": description, "img_url": img_urls}
             items.append(dic)
         return items
